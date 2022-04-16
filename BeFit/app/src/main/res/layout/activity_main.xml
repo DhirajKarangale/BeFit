@@ -15,6 +15,7 @@
         android:background="@color/purple_200"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/MenuColor"
         app:title="Be Fit"
         app:titleTextColor="#FFF"
         android:gravity="end"
