@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,9 +11,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-
-import pl.droidsonroids.gif.GifImageView;
 
 public class Beginner extends AppCompatActivity {
 
@@ -88,11 +84,11 @@ public class Beginner extends AppCompatActivity {
         {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String shareBody = "This is best app\ndownload this app\nFree app Download now\n" + "https://play.google.com/store/apps/details?id=com.DKSoftware.BeFit&hle=el";
+            String shareBody = "This is best fitness app I have been using it from so many days.\nAll this has been written by me\nDownload the app for free on PlayStore\n" + "https://play.google.com/store/apps/details?id=com.DKSoftware.BeFit&hle=el";
             String shareHub = "Be Fit";
             intent.putExtra(Intent.EXTRA_SUBJECT,shareHub);
             intent.putExtra(Intent.EXTRA_TEXT,shareBody);
-            startActivity(Intent.createChooser(intent,"share using"));
+            startActivity(Intent.createChooser(intent,"Make your friend Healthy"));
 
             return true;
         }
