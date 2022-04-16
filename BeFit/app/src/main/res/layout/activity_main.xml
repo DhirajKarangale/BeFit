@@ -77,7 +77,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="serif"
                                 android:padding="5dp"
-                                android:text="Days 60"
+                                android:text="Days 15"
                                 android:textSize="20dp"
                                 android:textStyle="bold"
                                 />
@@ -87,7 +87,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="serif"
                                 android:padding="5dp"
-                                android:text="Every Day 15 Min"
+                                android:text="Every Day 30 Min"
 
                                 android:textStyle="bold"
                                 android:textColor="#FFFF5722"
@@ -181,7 +181,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="serif"
                                 android:padding="5dp"
-                                android:text="Days 60"
+                                android:text="Days 45"
                                 android:textSize="20dp"
                                 android:textStyle="bold"
                                 />
@@ -191,7 +191,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="serif"
                                 android:padding="5dp"
-                                android:text="Every Day 15 Min"
+                                android:text="Every Day 45 Min"
 
                                 android:textStyle="bold"
                                 android:textColor="#FFFF5722"
@@ -274,7 +274,7 @@
                                     android:layout_height="wrap_content"
                                     android:fontFamily="monospace"
                                     android:padding="5dp"
-                                    android:text="Nutrition And Tips"
+                                    android:text="Tips and Diet"
                                     android:textColor="#FF000000"
                                     android:textSize="20dp"
                                     android:textStyle="bold"
@@ -284,7 +284,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:padding="5dp"
-                                    android:text="Suggestion For Free"
+                                    android:text="Tips for healthy life"
                                     android:textStyle="bold"
                                     />
 
