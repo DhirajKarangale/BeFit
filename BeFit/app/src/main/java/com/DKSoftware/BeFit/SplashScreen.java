@@ -2,6 +2,7 @@ package com.DKSoftware.BeFit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,11 +11,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
 
-    ImageView imageView;
-    TextView textView;
-    Animation up,down;
+    private ImageView imageView;
+    private TextView textView;
+    private Animation up,down;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +32,9 @@ public class SplashScreen extends AppCompatActivity {
         textView.setAnimation(down);
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            finish();
         },3500);
     }
 }

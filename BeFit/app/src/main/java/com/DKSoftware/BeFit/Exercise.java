@@ -162,6 +162,7 @@ public class Exercise extends AppCompatActivity {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value",String.valueOf(newVal));
                     startActivity(intent);
+                    finish();
                 }
                 else
                 {
@@ -170,6 +171,7 @@ public class Exercise extends AppCompatActivity {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value",String.valueOf(newVal));
                     startActivity(intent);
+                    finish();
                 }
             }
         }.start();
@@ -197,7 +199,10 @@ public class Exercise extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public void onBackPressed()
+    {
+        Intent intent = new Intent(Exercise.this,Beginner.class);
+        startActivity(intent);
+        finish();
     }
 }
