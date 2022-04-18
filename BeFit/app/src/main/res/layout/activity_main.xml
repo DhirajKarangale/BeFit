@@ -20,327 +20,327 @@
         app:titleTextColor="#FFF"
         android:gravity="end"
         />
-        
-        
-        <ScrollView
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:scrollbars="none"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             >
 
             <LinearLayout
-                android:layout_marginTop="10dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
                 android:orientation="vertical"
                 >
 
                 <LinearLayout
+                    android:onClick="Beginner"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10.0dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/backgroundcrop"
-                    android:orientation="vertical"
-                    >
-                    
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    tools:ignore="UsingOnClickInXml">
+
                     <LinearLayout
-                        android:onClick="Beginner"
                         android:layout_width="fill_parent"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false"
-                        tools:ignore="UsingOnClickInXml">
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
 
-                        <LinearLayout
-                            android:layout_width="fill_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            >
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:text="Beginner"
+                            android:textColor="#FF000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="monospace"
-                                android:padding="5dp"
-                                android:text="Beginner"
-                                android:textColor="#FF000000"
-                                android:textSize="20dp"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="serif"
-                                android:padding="5dp"
-                                android:text="Days 15"
-                                android:textSize="20dp"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="serif"
-                                android:padding="5dp"
-                                android:text="Every Day 15 Min"
-
-                                android:textStyle="bold"
-                                android:textColor="#FFFF5722"
-                                />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            >
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="Days 15"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="Every Day 15 Min"
+
+                            android:textStyle="bold"
+                            android:textColor="#FFFF5722"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        >
 
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/exersice_7"
+                            android:src="@drawable/exersice_1"
                             />
-
-                        </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                >
-
-                                <ImageView
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:padding="10dp"
-                                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                    android:contentDescription="TODO"
-                                    tools:ignore="ContentDescription" />
-
-                            </LinearLayout>
 
                     </LinearLayout>
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/ButtonBeginnerStart"
-                        android:layout_width="fill_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10.0dp"
-                        android:background="@drawable/btn"
-                        android:text="Get Started"
-                        android:textAllCaps="true"
-                        android:textColor="#FFF" />
+                        android:layout_weight="0"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            android:contentDescription="TODO"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-                <LinearLayout
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ButtonBeginnerStart"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/backgroundcrop"
-                    android:orientation="vertical"
-                    >
+                    android:background="@drawable/btn"
+                    android:text="Get Started"
+                    android:textAllCaps="true"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:onClick="Advance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    tools:ignore="UsingOnClickInXml">
 
                     <LinearLayout
-                        android:onClick="Advance"
                         android:layout_width="fill_parent"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false"
-                        tools:ignore="UsingOnClickInXml">
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
 
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="monospace"
-                                android:padding="5dp"
-                                android:text="Advance"
-                                android:textColor="#FF000000"
-                                android:textSize="20dp"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="serif"
-                                android:padding="5dp"
-                                android:text="Days 45"
-                                android:textSize="20dp"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="serif"
-                                android:padding="5dp"
-                                android:text="Every Day 30 Min"
-
-                                android:textStyle="bold"
-                                android:textColor="#FFFF5722"
-                                />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            >
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/exersice_1"
-                                />
-
-                        </LinearLayout>
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="0"
-                            >
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:text="Advance"
+                            android:textColor="#FF000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
 
-                            <ImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:padding="10dp"
-                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                android:contentDescription="TODO" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="Days 45"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
 
-                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="Every Day 30 Min"
+
+                            android:textStyle="bold"
+                            android:textColor="#FFFF5722"
+                            />
 
                     </LinearLayout>
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/ButtonAdvanceStart"
+                    <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/btn"
-                        android:text="Get Started"
-                        android:textAllCaps="true"
-                        android:textColor="#FFF"
-                        />
+                        android:layout_weight="2"
+                        >
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/exersice_3"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            android:contentDescription="TODO" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:onClick="Tips"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ButtonAdvanceStart"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/backgroundcrop"
-                    android:orientation="vertical"
-                    tools:ignore="UsingOnClickInXml">
+                    android:background="@drawable/btn"
+                    android:text="Get Started"
+                    android:textAllCaps="true"
+                    android:textColor="#FFF"
+                    />
 
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="150dp"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            android:baselineAligned="false"
-                            tools:ignore="UselessParent">
+            </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical"
-                                >
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="monospace"
-                                    android:padding="5dp"
-                                    android:text="Tips and Diet"
-                                    android:textColor="#FF000000"
-                                    android:textSize="20dp"
-                                    android:textStyle="bold"
-                                    />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:text="Tips for healthy life"
-                                    android:textStyle="bold"
-                                    />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="2"
-                                >
-
-                                <ImageView
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:src="@drawable/food"
-                                    />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0"
-                                >
-
-                                <ImageView
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:padding="10dp"
-                                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                    android:contentDescription="TODO"
-                                    />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                </LinearLayout>
+            <LinearLayout
+                android:onClick="Tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical"
+                tools:ignore="UsingOnClickInXml">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    tools:ignore="UselessParent">
 
-                    <FrameLayout
-                        android:id="@+id/flAddPlaceHolder"
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        />
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:text="Tips and Diet"
+                            android:textColor="#FF000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Tips for healthy life"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/food"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            android:contentDescription="TODO"
+                            />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
 
-        </ScrollView>
+                <FrameLayout
+                    android:id="@+id/flAddPlaceHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 </LinearLayout>

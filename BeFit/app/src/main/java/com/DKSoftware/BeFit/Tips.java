@@ -26,16 +26,16 @@ public class Tips extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.row,R.id.TxtTip,tipsTitle);
         listView.setAdapter(adapter);
 
-       listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-           @Override
-           public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               String description = tipsDescription[i];
-               Intent intent = new Intent(Tips.this,TipsDescription.class);
-               intent.putExtra("Description",description);
-               startActivity(intent);
-               finish();
-           }
-       });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String description = tipsDescription[i];
+                Intent intent = new Intent(Tips.this,TipsDescription.class);
+                intent.putExtra("Description",description);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     public void TipsBackButton(View view)

@@ -24,10 +24,10 @@ public class Beginner extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
         arr = new int[]
-        {
-                R.id.bowPose,R.id.bridgePose,R.id.chairPose,R.id.childPose,R.id.cobblerPose,R.id.cowPose,R.id.playjiPose,R.id.pausejiPose,R.id.plankPose
-                ,R.id.crunchesPose,R.id.situpPose,R.id.rotationPose,R.id.twistPose,R.id.legupPose,R.id.windmillPose,
-        };
+                {
+                        R.id.bowPose,R.id.bridgePose,R.id.chairPose,R.id.childPose,R.id.cobblerPose,R.id.cowPose,R.id.playjiPose,R.id.pausejiPose,R.id.plankPose
+                        ,R.id.crunchesPose,R.id.situpPose,R.id.rotationPose,R.id.twistPose,R.id.legupPose,R.id.windmillPose,
+                };
     }
 
     @Override
