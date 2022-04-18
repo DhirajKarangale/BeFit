@@ -87,7 +87,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="serif"
                                 android:padding="5dp"
-                                android:text="Every Day 30 Min"
+                                android:text="Every Day 15 Min"
 
                                 android:textStyle="bold"
                                 android:textColor="#FFFF5722"
@@ -191,7 +191,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="serif"
                                 android:padding="5dp"
-                                android:text="Every Day 45 Min"
+                                android:text="Every Day 30 Min"
 
                                 android:textStyle="bold"
                                 android:textColor="#FFFF5722"
