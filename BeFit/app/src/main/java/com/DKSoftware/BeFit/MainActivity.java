@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,Beginner.class);
                 startActivity(intent);
                 finish();
-//                overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
             }
         });
 
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(id == R.id.MenuPrivacyPolicy)
         {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UC_Dnn-QqlnrdYpKXycyzJDA"));
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dksoftware.netlify.app/BeFit_PrivacyPolicy.txt"));
             startActivity(intent);
             return true;
         }
@@ -95,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String shareBody = "This is best fitness app I have been using it from so many days.\nAll this has been written by me\nDownload the app for free on PlayStore\n" + "https://play.google.com/store/apps/details?id=com.DKSoftware.BeFit&hle=el";
+            String shareBody = "This is best fitness app I have been using it from so many days.\nAll this has been written by me seriously\nDownload the app for free on PlayStore\n" + "https://play.google.com/store/apps/details?id=com.DKSoftware.BeFit&hle=el";
             String shareHub = "Be Fit";
             intent.putExtra(Intent.EXTRA_SUBJECT,shareHub);
             intent.putExtra(Intent.EXTRA_TEXT,shareBody);
